@@ -1,0 +1,12 @@
+Escuela de Arte Multimedial Da Vinci
+CARRERA: Diseño y Programación Web
+MATERIA: Interacción con Dispositivos Móviles
+TRABAJO PRÁCTICO: Examen Parcial 1
+PROFESOR: D’Addezio Alejandro
+ALUMNO: Carlos Stalin Marquina Noboa
+CUATRIMESTRE: 2do Cuatrimestre
+COMISIÓN: DWN2AV
+TURNO: Noche
+FECHA DE ENTREGA: 17/05/2023
+URL DEL SITIO: https://calm-rabanadas-65cf95.netlify.app
+(Ojo la subí a un sitio genial que se llama netlify drop, pero no estoy seguro cuanto tiempo dure la página en la nube)

@@ -1,0 +1,737 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 5rem ;
+  }
+
+/* ----------------------------------------FORMATEO GENERAL*/
+img{
+    max-width: 100%;
+  }
+  ul,
+  ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  p{
+    overflow-wrap: break-word;
+  }
+  h2{
+    color: rgb(64, 1, 1);
+    margin: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+  h2 + p{
+    max-width: 30rem;
+  }
+  h3{
+    color: rgb(231, 160, 6);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+/* ------------------------ ALL */
+#all{
+    width: 100vw;
+    overflow: hidden;
+  }
+
+/* ----------------------------------------BODY */
+body{
+    background-color: rgb(242, 235, 223);
+    font-size: 0.85rem;
+    color: rgb(4, 4, 35);
+  }
+
+/* ----------------------------------------LOGO */
+  .logo{
+    background-image: url(../assets/logo_healthy.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -500px;
+    overflow: hidden;
+    width: 8rem;
+  }
+
+/* ----------------------------------------NAV */
+.header{
+    position: fixed;
+    width: 100%;
+    background: rgb(242, 235, 223);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    z-index: 999999;
+  }
+  nav .menu-cerrar{
+    display: none;
+  }
+  nav:target .menu-cerrar{
+    display: block;
+    z-index: 999999;
+  }
+  nav:target .menu-burger{
+    display: none;
+  }
+  .menu-cerrar a,
+  .menu-burger a{
+    display: block;
+    width: 2rem;
+  }
+
+/* ------------------------ ENLACES*/
+.menu-items{
+    background-color: rgb(4, 4, 35);
+    color: rgb(242, 235, 223);
+    position: fixed;
+    right: -200vw;
+    top: 5rem;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease .3s;
+    z-index: 999999;
+    border-radius: 5rem 0 0 5rem;
+    outline: 1px solid rgb(242, 235, 223);
+  }
+  .menu-items li{
+  border-bottom: 1px solid #000000;
+}
+.menu-items a{
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: rgb(242, 235, 223);
+  font-size: 1.2rem;
+}
+nav:target .menu-items{
+  right: 0;
+}
+
+/* ----------------------------------------HEADER */
+header{
+    height: 200px;
+    margin-top: 5.21rem;
+    padding: 0.5rem;
+    background-image: url(../assets/back_mobile_saludable.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+header h1{
+    color: rgb(64, 1, 1);
+    text-align: center;
+  }
+
+/* ----------------------------------------MAIN */
+main{
+    padding: 0.5rem;
+  }
+
+/* ----------------------------------------SECTION */
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+.h1{
+    text-align: center;
+  }
+  section article{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0.5rem;
+    max-width: 30rem;
+  }
+
+/* ----------------------------------------PASTILLAS */
+  .pastillas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .pastilla{
+    background-color: rgb(4, 4, 35);
+    color: #fff;
+    padding: 0.9rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .pastilla figure{
+    max-width: 4.5rem;
+  }
+
+/* ------------------------ CARROUSEL*/
+.swiper {
+    width: 100%;
+    height: auto;
+    background-color: rgb(4, 4, 35);
+    border-radius: 1rem;
+    max-width: 30rem;
+  }
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  /* ------------------------ FLECHAS*/
+  .swiper-button-next:after,
+  .swiper-button-prev::after,
+  .swiper-rtl .swiper-button-next::after,
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev{
+    color: rgb(242, 235, 223);
+    font-size: 1.5rem;
+  }
+
+   /* ------------------------ PUNTOS*/
+   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);
+    background-color: rgb(231, 160, 6);
+}
+
+  /* ------------------------ CONTENIDO*/
+.contenido{
+    background-color: rgb(4, 4, 35);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(242, 235, 223);
+    padding: 1rem 2rem;
+    column-gap: 1rem;
+}
+.contenido figure{
+    width: 25%;
+}
+.contenido div{
+    width: 75%;
+}
+
+/* ------------------------ FORMULARIO*/
+  form{
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.4rem;
+    font-size: 1.2rem;
+  }
+  form ol{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+input[type="email"],
+input[type="text"]{
+    height: 2.5rem;
+    width: 100%;
+    padding: .25rem;
+    border: none;
+    outline: 2px solid rgb(4, 4, 35);
+    border-radius: .5rem;
+    background-color: rgb(242, 235, 223);
+    color: rgb(4, 4, 35);
+    font-size: .85rem;
+    font-family: Arial, sans-serif;
+  }
+textarea{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: .85rem;
+    border: none;
+    border-radius: .5rem;
+    outline: 2px solid rgb(4, 4, 35);
+    background-color: rgb(242, 235, 223);
+    color: rgb(4, 4, 35);
+    resize: none;
+    height: auto;
+  }
+  input[type="submit"]{
+    width: 150px;
+    height: 2.5rem;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: .5rem;
+    outline: 2px solid rgb(4, 4, 35);
+    background-color: rgb(242, 235, 223);
+    color: rgb(4, 4, 35);
+    font-size: .85rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+  }
+  input[type="submit"]:active{
+    background-color: rgb(4, 4, 35);
+    color: rgb(242, 235, 223);
+  }
+  /* ------------------------ INPUT FOTO*/
+  input[type="file"] {
+        width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    color: rgb(4, 4, 35);
+    background-color: rgb(242, 235, 223);
+    border: 2px solid rgb(4, 4, 35);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* ------------------------ CAJA DE COMENTARIOS*/
+#caja-comentarios {
+    padding: 1rem;
+    max-width: 30rem;
+    background-color: rgb(4, 4, 35);
+    border-radius: 1rem;
+    color: rgb(242, 235, 223);
+    width: 100%;
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    column-gap: 1rem;
+    border-bottom: 2px rgba(255, 255, 255, 0.2) solid;
+}
+.comentario > div{
+    width: 3.75rem;
+}
+.comentario img {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.comentario > div:nth-child(2) {
+    flex-grow: 1;
+}
+
+.comentario h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.comentario div .sexo,
+.comentario div .email {
+    font-size: 0.5rem;
+    overflow-wrap: break-word;
+    color: rgba(242, 235, 223, 0.514);
+}
+
+/* ------------------------ FOOTER*/
+footer{
+  background-color: rgb(4, 4, 35);
+  color:rgb(242, 235, 223);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+footer ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul li a{
+  display: block;
+  width: 8.2rem;
+  height: 2rem;
+  text-decoration: none;
+  color: rgb(242, 235, 223);
+}
+footer ul.redes-sociales li a{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  text-decoration: none;
+  color: rgb(242, 235, 223);
+}
+
+
+footer ul.redes-sociales{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+a[href="https://es-la.facebook.com/"],
+a[href="https://www.instagram.com/"],
+a[href="https://twitter.com/login?lang=es"],
+a[href="https://co.linkedin.com/"]{
+  overflow: hidden;
+  text-indent: -500px;
+  min-width: 2rem;
+  display: block;
+}
+a[href="https://es-la.facebook.com/"]{
+  background-image: url(../assets/ico_facebook.svg);
+  background-repeat: no-repeat;
+}
+a[href="https://www.instagram.com/"]{
+  background-image: url(../assets/ico_instagram.svg);
+  background-repeat: no-repeat;
+}
+a[href="https://twitter.com/login?lang=es"]{
+  background-image: url(../assets/ico_twitter.svg);
+  background-repeat: no-repeat;
+}
+a[href="https://co.linkedin.com/"]{
+  background-image: url(../assets/ico_linkedin.svg);
+  background-repeat: no-repeat;
+}
+.autor{
+  color: rgb(242, 235, 223, 0.4);
+  width: 11rem;
+  /* PROFESOR AQUI LE PUSE ESTE ""DISPLAY: NONE"" APROPÓSITO PORQUE ME GUSTA MAS COMO SE VÉ LA PAGINA SIN EL AUTOR DEBAJO DE LAS REDES, PERO SI QUIERE PUEDE TESTEAR QUITANDOLO */
+  display: none;
+}
+
+/* ------------------------ IFRAME*/
+iframe{
+  max-width: 30rem;
+  width: auto;
+  height: auto;
+}
+
+/* ------------------------------------- MEDIA QUERYS------*/
+
+/* --------------------------------------------------------------------------- TABLET*/
+@media screen and (min-width: 768px){
+  *{
+    scroll-margin-top: 8rem ;
+  }
+ /* ----------------------------------------FORMATEO GENERAL*/
+h2{
+  font-size: 3rem;
+}
+h2 + p{
+  max-width: 40rem;
+  text-align: center;
+}
+h3{
+  font-size: 2rem;
+}
+
+/* ----------------------------------------BODY */
+body{
+  font-size: 1.2rem;
+}
+
+/* ----------------------------------------LOGO */
+.logo{
+  width: 12rem;
+}
+
+/* ----------------------------------------NAV */
+.header{
+  padding: 2rem 3rem;
+  height: 8rem;
+}
+
+/* ------------------------ ENLACES*/
+.menu-items{
+  top: 8rem;
+}
+.menu-items a{
+padding: 2rem;
+font-size: 1.5rem;
+}
+
+/* ----------------------------------------HEADER */
+header{
+  height: 350px;
+  margin-top: 8rem;
+  padding: 1rem;
+  background-image: url(../assets/back_tablet_saludable.svg);
+}
+
+/* ----------------------------------------MAIN */
+main{
+  padding: 1rem;
+}
+
+/* ----------------------------------------SECTION */
+section article:nth-child(even){
+  flex-direction: row-reverse;
+  max-width: 40rem;
+  align-items: center;
+  gap: 1rem;
+}
+section article:nth-child(odd){
+  flex-direction: row;
+  max-width: 40rem;
+  align-items: center;
+  gap: 1rem;
+}
+section article > figure{
+  flex-basis:30%;
+}
+section article > div{
+  flex-basis: 70%;
+}
+
+/* ----------------------------------------PASTILLAS */
+.pastillas{
+  display: flex;
+  max-width: 30rem;
+  align-items: stretch;
+  gap: .5rem;
+}
+.pastillas .pastilla{
+  padding: 2rem;
+  flex-direction: column-reverse;
+}
+.pastilla figure{
+  max-width: 6rem;
+}
+
+/* ------------------------ CARROUSEL*/
+.swiper {
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+}
+
+/* ------------------------ FLECHAS*/
+.swiper-button-next:after,
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev{
+  font-size: 2rem;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset,4px);
+  right: auto;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset,4px);
+  left: auto;
+}
+
+ /* ------------------------ PUNTOS*/
+ .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px var(--swiper-pagination-bullet-horizontal-gap,8px);
+  width: .6rem;
+  height: .6rem;
+}
+
+/* ------------------------ CONTENIDO*/
+.swiper-slide .contenido{
+  flex-direction: row-reverse;
+  padding: 2rem 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ------------------------ FORMULARIO*/
+form{
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+}
+form ol{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+form ol div{
+  display: flex;
+  gap: 1rem;
+}
+form ol div li{
+  flex-basis: 100%;
+}
+input[type="email"],
+input[type="text"]{
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+textarea{
+  font-size: 1.2rem;
+}
+input[type="submit"]{
+  font-size: 1.2rem;
+}
+
+/* ------------------------ CAJA DE COMENTARIOS*/
+#caja-comentarios {
+  padding: 2rem;
+  max-width: 40rem;
+}
+
+.comentario {
+  column-gap: 2rem;
+  font-size: 1.5rem;
+}
+.comentario > div{
+  width: 5rem;
+}
+.comentario img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.comentario h3 {
+  font-size: 1.9rem;
+}
+
+.comentario div .sexo,
+.comentario div .email {
+  font-size: 1rem;
+}
+
+/* ------------------------ FOOTER*/
+footer{
+padding: 2rem 0;
+}
+footer ul{
+gap: 8rem;
+}
+footer ul li a{
+height: 2.5rem;
+}
+footer ul.redes-sociales li a{
+width: 2.9rem;
+height: 2.9rem;
+}
+footer ul.redes-sociales{
+justify-content: center;
+gap: 5rem;
+}
+.autor{
+  display: block;
+  width: 36rem;
+}
+
+
+/* ------------------------ IFRAME*/
+iframe{
+width: 30rem;
+height: 16.879rem;
+}
+}
+
+/* ------------------------ --------------------------------------------------------------DESKTOP*/
+@media screen and (min-width: 1024px){
+  *{
+    scroll-margin-top: 6rem ;
+  }
+  #all{
+    width: 100%;
+  }
+  .header{
+    height: 6rem;
+    padding: 1rem 4rem;
+  }
+  .logo{
+    width: 10rem;
+    background-size: contain;
+  }
+  .botones{
+    display: none
+  }
+  .menu-items{
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    transition: none;
+    border-radius: 0;
+    outline: 0;
+    background-color: transparent;
+    gap: 1rem;
+  }
+  .menu-items li{
+    border-bottom: 0;
+  }
+  .menu-items a{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: rgb(4, 4, 35);
+    transition: ease .8s;
+  }
+  .menu-items a:hover{
+    background-color: rgb(4, 4, 35);
+    color: rgb(242, 235, 223);
+    border-radius: 1rem;
+  }
+  header{
+    width: 100%;
+    height: 649px;
+    margin-top: 1.25rem;
+    padding: 0;
+    background-image: url(../assets/back_pc_saludable.svg);
+  }
+  .h1{
+    font-size: 4rem;
+  }
+  section article:nth-child(2n) {
+    max-width: 80%;
+}
+section article:nth-child(odd) {
+  max-width: 80%;
+}
+.pastillas {
+  max-width: 80%;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+}
+.pastillas .pastilla{
+  width: 100%;
+}
+.swiper{
+  max-width: 80%;
+}
+.swiper ul li{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="submit"]:hover{
+  background-color: rgb(4, 4, 35);
+  color: rgb(242, 235, 223)
+}
+#caja-comentarios{
+  padding: 0 2rem;
+}
+.comentario{
+  font-size: 1.2rem;
+}
+.comentario h3{
+  font-size: 1.5rem;
+}
+.pastillas .pastilla:hover,
+footer ul div li a:hover,
+footer ul.redes-sociales li a:hover{
+  transition: ease .4s;
+  transform: translateY(-6px);
+}
+}
